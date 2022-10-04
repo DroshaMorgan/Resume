@@ -8,87 +8,110 @@
     <meta name="description" content="Проект - резюме Даниила Дрона">
     <meta name="keywords" content="проект, html">
     <title>Html Resume</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <img src="imgs/Avatar.jpg" alt="Моя фотография" width="150">
+    <div class="container">
+        <div class="info">
+            <img src="imgs/Avatar.jpg" alt="Моя фотография">
 
-    <h1>Даниил Дрон</h1>
+            <div class="info-text">
 
-    <p>Мои навыки: <b>Html5, CSS3, JavaScript, Git, React, SQLite3, php</b></p>
+                <h1>Даниил Дрон</h1>
 
-    <p>Люблю <i>играть на синтезаторе, писать/слушать музыку, велоспорт, футбол
-            и играть в компьютерные игры</i>
-    </p>
+                <p>Мои навыки: <b>Html5, CSS3, JavaScript, Git, React, SQLite3, php</b></p>
 
-    <h4>Список социальных сетей:</h4>
+                <p>Люблю <i>играть на синтезаторе, писать/слушать музыку, велоспорт, футбол
+                        и играть в компьютерные игры</i>
+                </p>
 
-    <a href="https://vk.com/dddrosha" target="_blank">VK</a> |
-    <a href="https://t.me/DroshaMor" target="_blank">Telegram</a>
+                <div class="networks">
+                    <h4>Список социальных сетей:</h4>
+                    <a href="https://vk.com/dddrosha" target="_blank">VK</a> |
+                    <a href="https://t.me/DroshaMor" target="_blank">Telegram</a>
+                </div>
 
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Программирование;</li>
-        <li>Велопоездки;</li>
-        <li>Прослушивание музыки;</li>
-        <li>Создание композиций в Ableton Live;</li>
-        <li>Игра на музыкальных инструментах: баяне, синтезаторе, гитаре;</li>
-        <li>Лепка из полимерной глины;</li>
-        <li>Рисование;</li>
-        <li>Компьютерные игры.</li>
-    </ol>
 
-    <h2>Обучение</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Место учебы</th>
-                <th>Направление</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>Гимназия</td>
-                <td>Физмат</td>
-                <td>2007-2018</td>
-            </tr>
-            <tr>
-                <td>ИТМО</td>
-                <td>Инфобез</td>
-                <td>2018-2021(незаконченное)</td>
-            </tr>
-            <tr>
-                <td>Geekbrains</td>
-                <td>Frontend</td>
-                <td>2021-2022</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-    <form action="">
-
-        <div>
-            <label for="name">Ваше имя</label>
-            <input type="text" id="name" placeholder="Введите имя">
+            </div>
         </div>
 
-        <div>
-            <label for="email">Ваш email</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="card transparent-purple">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Программирование;</li>
+                <li>Велопоездки;</li>
+                <li>Прослушивание музыки;</li>
+                <li>Создание композиций в Ableton Live;</li>
+                <li>Игра на музыкальных инструментах: баяне, синтезаторе, гитаре;</li>
+                <li>Лепка из полимерной глины;</li>
+                <li>Рисование;</li>
+                <li>Компьютерные игры.</li>
+                <li>Футбол</li>
+            </ol>
         </div>
 
-        <div>
-            <label for="message">Ваше сообщение</label>
-            <br>
-            <textarea id="message" placeholder="Введите сообщение" cols="20" rows="5"></textarea>
+
+        <div class="card transparent-aquamarine">
+            <h2>Обучение</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Место учебы</th>
+                        <th>Направление</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Гимназия</td>
+                        <td>Физмат</td>
+                        <td>2007-2018</td>
+                    </tr>
+                    <tr>
+                        <td>Музыкальная школа</td>
+                        <td>Баян/фортепиано</td>
+                        <td>2010-2016</td>
+                    </tr>
+                    <tr>
+                        <td>ИТМО</td>
+                        <td>Инфобез</td>
+                        <td>2018-2021(незаконченное)</td>
+                    </tr>
+                    <tr>
+                        <td>Geekbrains</td>
+                        <td>Frontend</td>
+                        <td>2021-2022</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <button type="submit">Отправить!</button>
-    </form>
+
+
+        <form action="" class="form">
+            <h2>Связаться со мной</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name" class="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" placeholder="Введите сообщение" cols="20" rows="5"></textarea>
+            </div>
+
+            <button class="btn" type="submit">Отправить!</button>
+        </form>
+
+    </div>
 </body>
 
 </html>

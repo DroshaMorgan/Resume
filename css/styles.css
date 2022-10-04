@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    font-weight: normal;
+    color: #0f141e;
+    background: #f1f1f1;
+}
+
+.container {
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 20px;
+}
+
+a {
+    color: rgb(183, 102, 241);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(34, 0, 255, 0.834);
+    /* text-decoration: underline; */
+}
+
+a:active {
+    color: rgba(0, 132, 255, 0.834);
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.info img {
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.info-text p {
+    font-style: italic;
+    font-weight: bold;
+    color: #737577;
+    margin: 2px;
+    max-width: 700px;
+}
+
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+.card {
+    /* border: 1px solid rgb(106, 102, 241); */
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+.transparent-purple {
+    background-color: rgba(107, 102, 241, 0.308);
+}
+
+.transparent-aquamarine {
+    background-color: rgba(102, 241, 239, 0.308);
+}
+
+.list {
+    padding-left: 25px;
+}
+
+table th:first-child,
+table td:first-child {
+    padding-left: 20px;
+}
+
+table th,
+table td {
+    text-align: left;
+    padding-left: 40px;
+}
+
+.form h2 {
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .form-group {
+    /* display: inline-block; */
+    margin-right: 20px;
+    width: 50%;
+    /* width: calc(50% - 40px); */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #000;
+    color: #000;
+    padding: 15px 0 10px 0;
+    outline: none;
+}
+
+.btn {
+    background: rgb(183, 102, 241);
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.btn:hover {
+    background-color: rgba(34, 0, 255, 0.834);
+}
+
+.btn:active {
+    background-color: rgba(0, 132, 255, 0.834);
+}
+
+@media (max-width: 685px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+
+    .form h2 {
+        text-align: left;
+    }
+
+    .form-row {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .form-row .form-group {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
